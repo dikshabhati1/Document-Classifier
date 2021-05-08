@@ -72,7 +72,7 @@ def app():
 
             modelOutput=model.predict(transformedText)
             modelOutput_prob=model.predict_proba(transformedText)
-            st.write("Our model is predicating this text is from-->", **label_dict[modelOutput[0]]**)
+            st.write("Our model is predicating this text is from-->", label_dict[modelOutput[0]])
             st.write('Below graph is showing the probability our model is giving for your text for different classes!')
 
         fig=go.Figure(data=[go.Bar(x = list(label_dict.values()),y=modelOutput_prob[0], marker={'color':np.arange(16)})])
