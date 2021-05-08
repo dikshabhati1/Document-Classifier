@@ -4,6 +4,7 @@ import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
 import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 from random import randint
 from sklearn.feature_extraction.text import TfidfVectorizer
 import joblib
@@ -17,7 +18,8 @@ from ReadFile import ReadPDF #, ReadTxt
 
 def app():
 	
-    st.title("Document Classification App :page_with_curl:")
+    st.markdown("<h1 style='text-align: center; color: red;'>Document Classification App :page_with_curl:</h1>", unsafe_allow_html=True)
+    # st.title("Document Classification App :page_with_curl:")
 
     # Below line will produce a dropdown to choose ML/DL model
     st.subheader('Please choose Machine Learning model for your predication')
