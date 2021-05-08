@@ -21,7 +21,7 @@ def app():
     st.title("Document Classification App :page_with_curl:")
 
     # Below line will produce a dropdown to choose ML/DL model
-    st.subheader('Please choose Machine Learning model')
+    st.subheader('Choose Machine Learning model')
     option = st.selectbox('',
     ('Logistic Regression', 'Naive Bayes', 'Support Vector Machine', 'Random Forest'))  
 
