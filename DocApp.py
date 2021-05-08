@@ -16,7 +16,7 @@ from ReadFile import ReadPDF #, ReadTxt
 # tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
 
 def app():
-
+    st.background(blue)
     st.title("Document Classification App :page_with_curl:")
 
     # Below line will produce a dropdown to choose ML/DL model
