@@ -17,7 +17,7 @@ from ReadFile import ReadPDF #, ReadTxt
 
 def app():
 
-    st.markdown("<h1 style='text-align: center; color: red;'>Document Classification App</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: red;'>Document Classification App :page_with_curl: </h1>", unsafe_allow_html=True)
 
     # Below line will produce a dropdown to choose ML/DL model
     st.subheader('Please choose Machine Learning model for your predication')
