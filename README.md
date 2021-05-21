@@ -18,5 +18,8 @@ Demo for the app<br>
 <br>
 <br>
 ![](images/streamlit1.jpeg)
+
 <br>
+<br>
+
 ![](images/streamlit2.jpeg)
