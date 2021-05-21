@@ -17,4 +17,4 @@ Made a streamlit web app.Here is the link for the application : https://share.st
 Demo for the app<br>
 <br>
 <br>
-1[]
+![](images/accuracy.jpeg)
