@@ -34,7 +34,7 @@ Models trained are:
 - BERT
 
 # Training Time
-<br>
+
 ![](images/training-time.jpeg)
 
 # Prediction Time
