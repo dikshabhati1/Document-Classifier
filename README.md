@@ -38,9 +38,9 @@ Models trained are:
 ![](images/training-time.jpeg)
 
 # Prediction Time
-<br>
+
 ![](images/prediction-time.jpeg)
 
 # Accuracy
-<br>
+
 ![](images/accuracy.jpeg)
