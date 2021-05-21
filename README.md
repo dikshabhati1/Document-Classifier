@@ -23,3 +23,24 @@ Demo for the app<br>
 <br>
 
 ![](images/streamlit2.jpeg)
+
+# Models
+Models trained are:
+- Random Forest
+- Mulitnomial Naive Bayes
+- Logistic Regression
+- Support Vector Machine
+- LSTM
+- BERT
+
+# Training Time
+<br>
+![](images/training-time.jpeg)
+
+# Prediction Time
+<br>
+![](images/prediction-time.jpeg)
+
+# Accuracy
+<br>
+![](images/accuracy.jpeg)
