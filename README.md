@@ -17,4 +17,6 @@ Made a streamlit web app.Here is the link for the application : https://share.st
 Demo for the app<br>
 <br>
 <br>
-![](images/accuracy.jpeg)
+![](images/streamlit1.jpeg)
+<br>
+![](images/streamlit2.jpeg)
