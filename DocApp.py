@@ -43,7 +43,7 @@ def app():
     elif option=='Random Forest':
         model=rf    
 
-    # Below code will take(upload) the PDFs and Txt files as input
+    # Below code will take(upload) the Txt files as input
     st.subheader('Please select Txt file only')
     uploaded_file = st.file_uploader("", type = ['txt', 'pdf'])
     file_text = ""
