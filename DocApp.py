@@ -44,7 +44,7 @@ def app():
         model=rf    
 
     # Below code will take(upload) the PDFs and Txt files as input
-    st.subheader('Please select PDFs or Txt file only')
+    st.subheader('Please select Txt file only')
     uploaded_file = st.file_uploader("", type = ['txt', 'pdf'])
     file_text = ""
     # st.text(uploaded_file)
