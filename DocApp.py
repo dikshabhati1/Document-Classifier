@@ -57,7 +57,7 @@ def app():
 
 
     # Below line will call the other code to read the PDFs using PyMuPDF/Fitz
-    st.subheader("Below is text from PDF/Txt file you have uploaded, you can insert or edit it as well")   
+    st.subheader("Below is text from Txt file you have uploaded, you can insert or edit it as well")   
     # Below line is to take input text from user/ or if they want to edit the extracted text from PDFs/Txt
     st.write("Your Text Here will appear below once file is uploaded. You can extend the size of box by expanding it from bottom right side!")
     userInput = st.text_area("", file_text ,height = 50,)
@@ -73,7 +73,7 @@ def app():
 
             modelOutput=model.predict(transformedText)
             modelOutput_prob=model.predict_proba(transformedText)
-            st.write("Our model is predicating this text is from-->", label_dict[modelOutput[0]])
+            st.write("Our model is predicting this text is from-->", label_dict[modelOutput[0]])
             st.write('Below graph is showing the probability our model is giving for your text for different classes!')
 
         fig=go.Figure(data=[go.Bar(x = list(label_dict.values()),y=modelOutput_prob[0], marker={'color':np.arange(16)})])
