@@ -49,10 +49,10 @@ def app():
     file_text = ""
     # st.text(uploaded_file)
     if uploaded_file:
-        if uploaded_file.name.endswith("pdf"):
-            ReturnText_obj = ReadPDF(uploaded_file)
-            file_text = ReturnText_obj.ReturnPDFText()
-        elif uploaded_file.name.endswith("txt") :
+        # if uploaded_file.name.endswith("pdf"):
+        #     ReturnText_obj = ReadPDF(uploaded_file)
+        #     file_text = ReturnText_obj.ReturnPDFText()
+        if uploaded_file.name.endswith("txt") :
             file_text = uploaded_file.read()
 
 
