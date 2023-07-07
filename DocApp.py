@@ -14,6 +14,7 @@ from ReadFile import ReadPDF #, ReadTxt
 
 # testing phase
 from PyPDF2 import PdfReader
+import fitz
 
 def app():
 	
@@ -50,9 +51,8 @@ def app():
     if uploaded_file:
         if uploaded_file.name.endswith("pdf"):
             reader = PdfReader(uploaded_file)
-
-	        for page in reader.pages:
-	            file_text += page.extract_text()
+            for page in reader:
+		final_text+=page.get_text()
         elif uploaded_file.name.endswith("txt") :
             file_text = uploaded_file.read()
 
