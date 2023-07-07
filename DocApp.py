@@ -49,11 +49,7 @@ def app():
     file_text = ""
     # st.text(uploaded_file)
     if uploaded_file:
-        if uploaded_file.name.endswith("pdf"):
-            reader = PdfReader(uploaded_file)
-            for page in reader:
-                file_text+=page.get_text()
-        elif uploaded_file.name.endswith("txt") :
+        if uploaded_file.name.endswith("txt") :
             file_text = uploaded_file.read()
 
 
