@@ -50,7 +50,7 @@ def app():
     if uploaded_file:
         if uploaded_file.name.endswith("pdf"):
             reader = PdfReader(uploaded_file)
-	    page = reader.pages
+	    page = reader.pages[0]
             # extracting text from page
             file_text = page.extract_text()
         elif uploaded_file.name.endswith("txt") :
