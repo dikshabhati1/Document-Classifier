@@ -12,9 +12,8 @@ import joblib
 from TextPreprocess import CleanText
 from ReadFile import ReadPDF #, ReadTxt
 
-# import tensorflow as tf
-# from transformers import BertTokenizer
-# tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
+# testing phase
+from PyPDF2 import PdfReader
 
 def app():
 	
@@ -49,10 +48,12 @@ def app():
     file_text = ""
     # st.text(uploaded_file)
     if uploaded_file:
-        # if uploaded_file.name.endswith("pdf"):
-        #     ReturnText_obj = ReadPDF(uploaded_file)
-        #     file_text = ReturnText_obj.ReturnPDFText()
-        if uploaded_file.name.endswith("txt") :
+        if uploaded_file.name.endswith("pdf"):
+            reader = PdfReader(uploaded_file)
+	    page = reader.pages
+            # extracting text from page
+            file_text = page.extract_text()
+        elif uploaded_file.name.endswith("txt") :
             file_text = uploaded_file.read()
 
 
